@@ -88,8 +88,21 @@ export type InvoiceForm = {
 };
 
 
+// Wszystko powyżej do usunięcia
+
 export type ImageDesc = {
   title: string;
   desc: string;
+  href: string;
+}
+
+export type ShowcaseDetail = {
+  projectInfo: string;
+  // Powierzchnia rezalizacji
+  areaInfo: string;
+  description: string;
+  // Czas realizacji
+  workTime: string;
+  imgUrls: string[];
   href: string;
 }
