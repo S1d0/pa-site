@@ -7,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='flex h-full bg-zinc-50 dark:bg-black'>{children}</body>
+      <body className='scroll-smooth'>{children}</body>
     </html>
   );
 }
