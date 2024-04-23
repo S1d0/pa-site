@@ -86,3 +86,10 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+
+export type ImageDesc = {
+  title: string;
+  desc: string;
+  href: string;
+}
