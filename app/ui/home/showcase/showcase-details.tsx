@@ -28,6 +28,7 @@ export default function ShowcaseDetails(detail: ShowcaseDetail) {
       {detail.imgUrls.map((url, i) => {
         return (
           <div
+            key={"showcase_"+i}
             className={clsx(
               i % 2 ? 'sm:col-span-2 sm:row-span-2' : 'sm:col-span-2',
             )}

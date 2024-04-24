@@ -40,6 +40,7 @@ export default function ShowcaseMenuNav({toggleSelected}: ShowcaseMenuNavProps) 
       {navItems.map((item) => {
         return (
           <Button
+          key={item.id}
           radius="sm"
           variant="flat"
           className=" font-bold shadow-lg hover:bg-zinc-800 hover:text-stone-50 w-36"
