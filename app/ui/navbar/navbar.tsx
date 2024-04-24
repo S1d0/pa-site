@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <header className="absolute inset-x-0 top-0 z-10 sm:z-10">
       <nav className="justify-betwen flex items-center justify-between p-4 lg:px-8">
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 m-auto items-center">
           <Link href="#" className="">
             <span className="sr-only">Your Company</span>
             <Image
@@ -28,6 +28,7 @@ export default function Navbar() {
               P & A wykończenia
             </h1>
           </Link>
+          <h1 className='hidden sm:flex text-stone-200 font-bold text-5xl tracking-widest'>P&A realizacje wykończeń</h1>
         </div>
         {/* Desktop menu */}
         <div className="flex gap-2 items-center">

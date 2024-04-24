@@ -106,3 +106,7 @@ export type ShowcaseDetail = {
   imgUrls: string[];
   href: string;
 }
+
+export interface IToggle {
+  (key: string): void;
+}
