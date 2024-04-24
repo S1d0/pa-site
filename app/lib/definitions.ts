@@ -110,3 +110,10 @@ export type ShowcaseDetail = {
 export interface IToggle {
   (key: string): void;
 }
+
+export type TestimonyInfo = {
+  description: string,
+  author: string,
+  authorDesc: string
+  avatarHref: string
+}

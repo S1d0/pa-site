@@ -20,21 +20,21 @@ export default function About() {
           </h1>
         </div>
         <div className="container">
-          <div className="m-auto grid grid-cols-12 gap-8">
-            <Card className="col-span-12 h-[600px] sm:col-span-4">
+          <div className="m-auto grid grid-cols-12 gap-8 ">
+            <Card className="col-span-12 h-[600px] sm:col-span-4 group">
               <div className="absolute top-0 z-10 flex-col items-center">
                 <CardHeader className="flex flex-col sm:py-12">
                   <LiaPencilRulerSolid
                     size={100}
-                    className="mb-4 text-zinc-800/60"
+                    className="mb-4 text-zinc-800/60 group-hover:text-white"
                   />
-                  <h4 className="text-2xl font-semibold text-zinc-800">
+                  <h4 className="text-2xl font-semibold text-zinc-800 group-hover:text-white">
                     Wizja i Projekt
                   </h4>
                 </CardHeader>
                 <CardBody className="flex flex-col items-center justify-center">
                   <div className="w-3/4 py-2">
-                    <p className="text-center text-lg font-medium tracking-wider text-zinc-800">
+                    <p className="text-center text-lg font-medium tracking-wider text-zinc-800 line-clamp-3 group-hover:line-clamp-none">
                       W każdym projekcie domu, mieszkania, czy apartamentu
                       staram się dostrzec we wnętrzu jego potencjał, znaleźć w
                       nim coś wyjątkowego. Podczas przygotowywania koncepcji
@@ -48,21 +48,21 @@ export default function About() {
               <Image
                 removeWrapper
                 alt="Card background"
-                className="z-0 h-full w-full object-cover opacity-50"
+                className="z-0 h-full w-full object-cover opacity-50 group-hover:brightness-50"
                 src="/about/projekt2.webp"
               />
             </Card>
-            <Card className="col-span-12 h-[600px] sm:col-span-4">
+            <Card className="col-span-12 h-[600px] sm:col-span-4 group">
               <div className="absolute top-0 z-10 flex-col items-center">
-                <CardHeader className="flex flex-col sm:py-12">
-                  <GiPaintBucket size={100} className="mb-4 text-zinc-800/60" />
-                  <h4 className="text-2xl font-semibold text-zinc-800">
+                <CardHeader className="flex flex-col sm:py-12 group-hover:text-white">
+                  <GiPaintBucket size={100} className="mb-4 text-zinc-800/60 group-hover:text-white" />
+                  <h4 className="text-2xl font-semibold text-zinc-800 group-hover:text-white">
                     Najlepsze Materiały
                   </h4>
                 </CardHeader>
                 <CardBody className="flex flex-col items-center justify-center">
                   <div className="w-3/4 py-2">
-                    <p className="text-center text-lg font-medium tracking-wider text-zinc-800">
+                    <p className="text-center text-lg font-medium tracking-wider text-zinc-800 line-clamp-3 group-hover:line-clamp-none">
                       W swoich projektach stawiam na ponadczasowe rozwiązania.
                       Jakość użytych materiałów wpływa na wykończenie i finalny
                       obraz realizacji. Materiały takie jak drewno, kamień,
@@ -77,21 +77,21 @@ export default function About() {
               <Image
                 removeWrapper
                 alt="Card background"
-                className="z-0 h-full w-full object-cover opacity-50"
+                className="z-0 h-full w-full object-cover opacity-50 group-hover:brightness-50"
                 src="/about/projekt2.webp"
               />
             </Card>
-            <Card className="col-span-12 h-[600px] sm:col-span-4">
+            <Card className="col-span-12 h-[600px] sm:col-span-4 group">
               <div className="absolute top-0 z-10 flex-col items-center">
                 <CardHeader className="flex flex-col sm:py-12">
-                  <BsLampFill size={100} className="mb-4 text-zinc-800/60" />
-                  <h4 className="text-2xl font-semibold text-zinc-800">
-                    Meble i Dekoracje
+                  <BsLampFill size={100} className="mb-4 text-zinc-800/60 group-hover:text-white" />
+                  <h4 className="text-2xl font-semibold text-zinc-800 group-hover:text-white">
+                    Sztukateria i Dekoracje
                   </h4>
                 </CardHeader>
                 <CardBody className="flex flex-col items-center justify-center">
                   <div className="w-3/4 py-2">
-                    <p className="text-center text-lg font-medium tracking-wider text-zinc-800">
+                    <p className="text-center text-lg font-medium tracking-wider text-zinc-800 line-clamp-3 group-hover:line-clamp-none">
                       Bardzo często w swoich realizacjach, tworzę unikatowe
                       meble takie jak regały, szafki, stoły czy konsole. Łącze
                       elementy mebli i dekoracji ze sztuką, grafikami czy piękną
@@ -105,7 +105,7 @@ export default function About() {
               <Image
                 removeWrapper
                 alt="Card background"
-                className="z-0 h-full w-full object-cover opacity-50"
+                className="z-0 h-full w-full object-cover opacity-50 group-hover:brightness-50"
                 src="/about/projekt2.webp"
               />
             </Card>
