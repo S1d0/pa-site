@@ -86,3 +86,27 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+
+// Wszystko powyżej do usunięcia
+
+export type ImageDesc = {
+  title: string;
+  desc: string;
+  href: string;
+}
+
+export type ShowcaseDetail = {
+  projectInfo: string;
+  // Powierzchnia rezalizacji
+  areaInfo: string;
+  description: string;
+  // Czas realizacji
+  workTime: string;
+  imgUrls: string[];
+  href: string;
+}
+
+export interface IToggle {
+  (key: string): void;
+}
