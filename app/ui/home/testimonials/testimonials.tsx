@@ -2,7 +2,6 @@ import { Divider } from '@nextui-org/divider';
 import SingleTestimony from './single-testimony';
 import { testimonials } from '../placeholder';
 import clsx from 'clsx';
-import ModalTestimony from './modal-testimony';
 
 export default function Testimonials() {
   return (
@@ -14,27 +13,28 @@ export default function Testimonials() {
             poznaj opinie naszych inwestorów
           </h2>
           <Divider className="my-2" />
-          <h1 className="text-xl text-center font-semibold text-zinc-800 sm:text-4xl">
+          <h1 className="text-center text-xl font-semibold text-zinc-800 sm:text-4xl">
             Zrelizowaliśmy projekty dla niesamowitych ludzi
           </h1>
         </div>
 
         {/* Testimonials */}
-        <div className="container flex flex-col items-center">
+        <div className="flex flex-col w-full">
+          {/* List */}
           <div className="relative m-auto grid grid-cols-12 gap-8 ">
             {testimonials.map((testimonial, i) => {
               return (
-                <div className={clsx(
-                  "relative col-span-12 overflow-hidden px-6 py-12 shadow-2xl sm:col-span-4 sm:py-32 lg:px-8",
-                { ["hidden sm:flex"] : i > 0} 
-                )}>
+                <div
+                key={"testimony_"+i}
+                  className={clsx(
+                    'relative col-span-12 overflow-hidden px-6 py-12 shadow-2xl sm:col-span-4 sm:py-32 lg:px-8',
+                    { ['hidden']: i > 2 },
+                  )}
+                >
                   <SingleTestimony {...testimonial} />
                 </div>
               );
             })}
-          </div>
-          <div className='flex sm:hidden'>
-            <ModalTestimony />
           </div>
         </div>
       </div>

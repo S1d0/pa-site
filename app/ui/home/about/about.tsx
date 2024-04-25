@@ -62,7 +62,7 @@ export default function About() {
                 </CardHeader>
                 <CardBody className="flex flex-col items-center justify-center">
                   <div className="w-3/4 py-2">
-                    <p className="text-center text-lg font-medium tracking-wider text-zinc-800 line-clamp-3 group-hover:line-clamp-none">
+                    <p className="text-center text-sm sm:text-lg font-medium tracking-wider text-zinc-800 line-clamp-3 group-hover:line-clamp-none">
                       W swoich projektach stawiam na ponadczasowe rozwiązania.
                       Jakość użytych materiałów wpływa na wykończenie i finalny
                       obraz realizacji. Materiały takie jak drewno, kamień,
@@ -200,40 +200,6 @@ export default function About() {
               <CardHeader className="flex gap-3">
                 <Image
                   alt="nextui logo"
-                  height={50}
-                  radius="sm"
-                  src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                  width={50}
-                />
-                <div className="flex flex-col">
-                  <p className="text-lg">Biuro Projektowe</p>
-                  <p className="text-medium text-default-500">Anna Zajkowska</p>
-                </div>
-              </CardHeader>
-              <Divider />
-              <CardBody>
-                <p>
-                  We wnętrzach szukam przestrzeni, nadaje jej funkcjonalny i
-                  estetyczny wygląd, dopasowany do indywidualnych gustów i
-                  potrzeb każdego inwestora.
-                </p>
-              </CardBody>
-              <Divider />
-              <CardFooter>
-                <Link
-                  isExternal
-                  showAnchorIcon
-                  href="https://github.com/nextui-org/nextui"
-                  className="tracking-wider"
-                >
-                  Czytaj więcej
-                </Link>
-              </CardFooter>
-            </Card>
-            <Card className="col-span-12 sm:col-span-4">
-              <CardHeader className="flex gap-3">
-                <Image
-                  alt="nextui logo"
                   height={80}
                   radius="sm"
                   src="https://cdnmedia.mapei.com/images/librariesprovider24/default-album/logo-desktop-pl.png?sfvrsn=d2754575_0"
@@ -250,38 +216,6 @@ export default function About() {
                   MAPEI jest jednym ze światowych liderów w produkcji
                   profesjonalnej chemii budowlanej. Oferujemy trwałe, wysokiej
                   jakości rozwiązania, przyjazne dla planety i dla ludzi.{' '}
-                </p>
-              </CardBody>
-              <Divider />
-              <CardFooter>
-                <Link
-                  isExternal
-                  showAnchorIcon
-                  href="https://github.com/nextui-org/nextui"
-                  className="tracking-wider"
-                >
-                  Czytaj więcej
-                </Link>
-              </CardFooter>
-            </Card>
-            <Card className="col-span-12 sm:col-span-4">
-              <CardHeader className="flex gap-3">
-                <Image
-                  alt="nextui logo"
-                  height={40}
-                  radius="sm"
-                  src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                  width={40}
-                />
-                <div className="flex flex-col">
-                  <p className="text-lg">Doradztwo projektowe</p>
-                  <p className="text-medium text-default-500">Wiesław Idźkowski</p>
-                </div>
-              </CardHeader>
-              <Divider />
-              <CardBody>
-                <p>
-                Możesz wybrać jedną z czterech strategii różniących się poziomem ryzyka i zakładanym czasem inwestycji. Zaproponujemy Ci wyłącznie te z nich, które będą zgodne z Twoim profilem inwestora.
                 </p>
               </CardBody>
               <Divider />

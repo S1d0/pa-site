@@ -1,6 +1,14 @@
+import {
+  Button,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@nextui-org/react';
 import Image from 'next/image';
-import NavLinks from '../navlinks';
 import Link from 'next/link';
+
+const backdrops = ['opaque', 'blur', 'transparent'];
+const num = '+48 606 722 821';
 
 export default function Hero() {
   return (
@@ -22,9 +30,24 @@ export default function Hero() {
             Zajmujemy się realizacją projektów wykończeniowych już 15 lat.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
-            <button className="block rounded-lg bg-stone-200/60 px-4 py-2 font-bold text-stone-800 hover:bg-zinc-800/60 hover:text-white sm:w-52">
-              Zadzwoń do nas
-            </button>
+            <div className='flex-1 sm:flex-grow-0'>
+              <Popover placement="bottom" showArrow={true} backdrop="blur">
+                <PopoverTrigger>
+                  <Button className="w-full rounded-lg bg-stone-200/60 px-4 py-2 text-center font-bold text-stone-800 hover:bg-zinc-800/60 hover:text-white sm:w-52">
+                    Zadzwoń do nas
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent>
+                  <div className="px-8 py-4">
+                    <div className="text-medium font-bold">
+                      Powiedz nam o swoich planach!
+                    </div>
+                    <Link href="tel+48606722821">{num}</Link>
+                  </div>
+                </PopoverContent>
+              </Popover>
+            </div>
+
             <Link
               href="/home#showcase"
               className="block rounded-lg bg-stone-200/60 px-4 py-2 text-center font-bold text-stone-800 hover:bg-zinc-800/60 hover:text-white sm:w-52"
