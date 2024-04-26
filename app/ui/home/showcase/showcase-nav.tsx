@@ -30,7 +30,7 @@ const navItems: NavItem[] = [
 ];
 
 interface ShowcaseMenuNavProps {
-  toggleSelected: IToggle;
+  toggleSelected: IToggle<string>;
   navItems: NavItem[];
 }
 

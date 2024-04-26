@@ -29,8 +29,8 @@ export type ShowcaseDetail = {
   href: string;
 }
 
-export interface IToggle {
-  (key: string): void;
+export interface IToggle<keyType> {
+  (key: keyType): void;
 }
 
 export type TestimonyInfo = {

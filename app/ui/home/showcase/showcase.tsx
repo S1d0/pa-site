@@ -11,7 +11,7 @@ import { homeShowcaseDetails, flatShowcaseDetails, saloonShowcaseDetails, bathSh
 export default function Showcase() {
   const [selected, setSelected] = useState('');
 
-  const toggleSelected: IToggle = (key: string) => {
+  const toggleSelected: IToggle<string> = (key: string) => {
     selected != key ? setSelected(key) : setSelected('');
   };
 
