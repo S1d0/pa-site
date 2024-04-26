@@ -3,13 +3,15 @@ import { z } from 'zod';
 import { ContactForm } from './definitions';
 import { revalidatePath } from 'next/cache';
 import { Resend } from 'resend';
+import ContactEmail from '../ui/templates/contact-mail';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const officeMailBox = process.env.MAIL_BOX;
 
 const ContactFormSchema = z.object({
   name: z.string(),
   email: z.string(),
-  phone: z.coerce.number(),
+  phone: z.string(),
   projectDesc: z.string(),
 });
 
@@ -26,9 +28,10 @@ export async function sendEmail(prevState: any, formData: FormData) {
   console.log("Sending email");
   const { data, error } = await resend.emails.send({
     from: `P&A strona <sidzkowski@softwaregoodies.org>`,
-    to: email,
+    to: officeMailBox? officeMailBox : "zajkowski.pawel@wp.pl" ,
     subject: `Nowy projekt od ${name} - ${phone}`,
-    text: 'Hello from email',
+    reply_to: email,
+    react: <ContactEmail name={name} phone={phone} description={projectDesc} email={email}/>,
   });
 
   if (error) {

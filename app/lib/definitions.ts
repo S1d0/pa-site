@@ -5,7 +5,7 @@
 export type ContactForm = {
   name: string;
   email: string;
-  phone: number;
+  phone: string;
   projectDesc: string;
 };
 
