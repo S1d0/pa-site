@@ -6,30 +6,19 @@ import { Button } from '@nextui-org/react';
 import { useRef, useState } from 'react';
 import { useFormState, useFormStatus } from 'react-dom';
 import { GiPartyPopper } from 'react-icons/gi';
+import { FiPhoneCall } from 'react-icons/fi';
 
 const initialState = {
   message: '',
 };
 
-export interface SubmitBtnStateAction {
-  (key: boolean): void;
-}
-
-interface SubmitBtnProps {
-  stateAction: SubmitBtnStateAction;
-}
-
-function SubmitButton({ stateAction }: SubmitBtnProps) {
+function SubmitButton() {
   const { pending } = useFormStatus();
 
   return (
     <Button
       type="submit"
       disabled={pending}
-      onClick={() => {
-        stateAction(false);
-        console.log('Click!');
-      }}
       className="flex-1 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
     >
       Wyślij
@@ -40,11 +29,7 @@ function SubmitButton({ stateAction }: SubmitBtnProps) {
 export default function Contact() {
   const ref = useRef<HTMLFormElement>(null);
   const [state, formAction] = useFormState(sendEmail, initialState);
-  const [showSubmitBtn, setShowSubmitBtn] = useState(true);
-
-  const submitBtnStateAction = (state: boolean) => {
-    setShowSubmitBtn(state);
-  };
+  const [submitBtnState, showSubmitBtn] = useState(true);
 
   return (
     <section id="contact" className="relative m-2 px-2 sm:my-16 sm:px-12">
@@ -60,7 +45,7 @@ export default function Contact() {
         </div>
         {/* Form */}
         <div className="relative flex justify-center sm:w-2/5">
-          {!showSubmitBtn && (
+          {!submitBtnState && (
             <div className="flex w-full flex-col items-center gap-6">
               <GiPartyPopper className="text-center text-6xl text-indigo-600" />
               <h1 className="text-center text-xl font-bold text-zinc-800">
@@ -71,7 +56,7 @@ export default function Contact() {
               </h2>
               <Button
                 onClick={() => {
-                  submitBtnStateAction(true);
+                  showSubmitBtn(true);
                 }}
                 className="w-full rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
@@ -79,20 +64,25 @@ export default function Contact() {
               </Button>
             </div>
           )}
-          {showSubmitBtn && (
+          {submitBtnState && (
             <form
               ref={ref}
               action={async (formData) => {
                 formAction(formData);
+                showSubmitBtn(false);
                 ref.current?.reset();
               }}
             >
-              <p className="text-sm leading-6 text-gray-600">
+              <p className="text-sm leading-6 text-gray-800 text-center">
                 Krótki opis Twoich planow pozwoli nam zrozumieć zakres prac oraz
-                możliwe terminy realizacji, nasz pracownik odzwoni do Ciebe by
-                omówić dalszy proces realizacji.
+                możliwe terminy.
               </p>
-
+              <div className="flex gap-2 items-center justify-center mt-2">
+                <p className="text-lg font-bold leading-6 text-gray-800">
+                  Zadzwonimy do Ciebie w ciągu 24h by omówić dalszy proces realizacji
+                </p>
+                <FiPhoneCall className='text-lg text-indigo-600 '/>
+              </div>
               <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 {/* Name */}
                 <div className="col-span-6 sm:col-span-3">
@@ -178,7 +168,7 @@ export default function Contact() {
               </div>
               {!state && <div>Wiadomość Wysłana</div>}
               <div className="mt-6 flex w-full gap-x-6">
-                <SubmitButton stateAction={submitBtnStateAction} />
+                <SubmitButton />
               </div>
             </form>
           )}
