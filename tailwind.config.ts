@@ -1,5 +1,4 @@
 import { nextui } from '@nextui-org/theme';
-import { transform } from 'next/dist/build/swc';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
