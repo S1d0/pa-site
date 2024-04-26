@@ -1,19 +1,17 @@
 'use client';
 
-import Link from 'next/link';
 import ImageContainer from '../imgcontainer';
 import { useState } from 'react';
 import clsx from 'clsx';
-import Image from 'next/image';
 import ShowcaseDetails from './showcase-details';
-import { IToggle, ShowcaseDetail } from '@/app/lib/definitions';
+import { IToggle } from '@/app/lib/definitions';
 import ShowcaseMenuNav from './showcase-nav';
 import { homeShowcaseDetails, flatShowcaseDetails, saloonShowcaseDetails, bathShowcaseDetails, kitchenShowcaseDetails } from '../placeholder';
 
 export default function Showcase() {
   const [selected, setSelected] = useState('');
 
-  const toggleSelected: IToggle = (key: string) => {
+  const toggleSelected: IToggle<string> = (key: string) => {
     selected != key ? setSelected(key) : setSelected('');
   };
 
