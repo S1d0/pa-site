@@ -42,7 +42,8 @@ export default function Hero() {
                     <div className="text-medium font-bold">
                       Powiedz nam o swoich planach!
                     </div>
-                    <Link href="tel+48606722821">{num}</Link>
+                    <p className='hidden sm:flex'>{num}</p>
+                    <Link className='sm:hidden font-semibold' href="tel+48606722821">{num}</Link>
                   </div>
                 </PopoverContent>
               </Popover>
