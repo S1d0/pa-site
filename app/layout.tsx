@@ -1,4 +1,5 @@
 import '@/app/ui/global.css';
+import MobileNav from '@/app/ui/navbar/navbar';
 
 export default function RootLayout({
   children,
@@ -7,7 +8,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='scroll-smooth'>{children}</body>
+      <body className='scroll-smooth'>
+      <MobileNav />
+
+        {children}
+        </body>
     </html>
   );
 }
