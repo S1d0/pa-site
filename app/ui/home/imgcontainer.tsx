@@ -1,33 +1,5 @@
 import { ImageDesc } from '@/app/lib/definitions';
 
-// const images: ImageDesc = [
-//   {
-//     title: 'Dom 150 m2 - Hrubieszów',
-//     desc: 'projekt arch. Emili Zajkowskie',
-//     href: 'https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80',
-//   },
-//   {
-//     title: 'Mieszkanie 100 m2 - Hrubieszów',
-//     desc: 'projekt arch. Emili Zajkowskie',
-//     href: 'https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80',
-//   },
-//   {
-//     title: 'Salon - Hrubieszów',
-//     desc: 'projekt arch. Emili Zajkowskie',
-//     href: 'https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80',
-//   },
-//   {
-//     title: 'Kuchnia - Hrubieszów',
-//     desc: 'projekt arch. Emili Zajkowskie',
-//     href: 'https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80',
-//   },
-//   {
-//     title: 'Łazienka - Hrubieszów',
-//     desc: 'projekt arch. Emili Zajkowskie',
-//     href: 'https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80',
-//   },
-// ];
-
 export default function ImageContainer(desc: ImageDesc) {
   return (
     <div className="group rounded-lg cursor-pointer">
