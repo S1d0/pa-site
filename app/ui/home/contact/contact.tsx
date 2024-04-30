@@ -15,8 +15,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative m-2 px-2 sm:my-16 sm:px-12">
-      <div className="mt-8 flex flex-col items-center gap-12 sm:mt-12 sm:gap-16">
+    <section id="contact" className="relative m-2 px-2">
+      <div className="mt-2 flex flex-col items-center gap-4 sm:mt-12 sm:gap-16">
         <div className="flex flex-col items-center gap-2">
           <h2 className="text-sm uppercase text-zinc-500 sm:text-medium">
             zrealizujmy Twoje marzenia
@@ -26,12 +26,18 @@ export default function Contact() {
             Napisz nam o Twoim projekcie remontu
           </h1>
         </div>
-        <div className="relative flex flex-col justify-center sm:w-2/5 gap-2">
-          <div className={clsx(showSuccess ? 'flex w-full flex-col  items-center gap-4' : 'hidden')}>
-              <SuccessMsgBox toggleSuccessBox={setShowSuccessBox}/>
+        <div className="flex flex-col gap-2">
+          <div
+            className={clsx(
+              showSuccess
+                ? 'flex w-full flex-col  items-center gap-4'
+                : 'hidden',
+            )}
+          >
+            <SuccessMsgBox toggleSuccessBox={setShowSuccessBox} />
           </div>
           <div className={clsx(showSuccess ? 'hidden' : 'flex')}>
-            <ContactForm toggleSuccessBox={setShowSuccessBox}/>
+            <ContactForm toggleSuccessBox={setShowSuccessBox} />
           </div>
         </div>
       </div>
