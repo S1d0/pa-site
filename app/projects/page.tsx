@@ -95,10 +95,6 @@ export default function ProjectsPage() {
 
   return (
     <main>
-      {/* TODO: Remove me! */}
-      {/* <Tooltip content={tagSelected}>
-        <Button>Selected tag</Button>
-      </Tooltip> */}
       <div className="container mx-auto">
         <div className="flex flex-col gap-2 sm:gap-8">
           {/* Header  */}
@@ -143,6 +139,7 @@ export default function ProjectsPage() {
             {projectPreviews.map((preview) => {
               return (
                 <Card
+                    key={preview.name}
                   className={clsx('transition-all duration-500 group col-span-12 h-[300px] cursor-pointer justify-center sm:col-span-4',
                       (tagSelected === PortfolioTag.ALL || tagSelected === preview.tag) ? "flex" : "hidden"
                   )}

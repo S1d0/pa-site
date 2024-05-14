@@ -1,9 +1,10 @@
 import { ImageDesc } from '@/app/lib/definitions';
+import {Image} from "@nextui-org/react";
 
 export default function ImageContainer(desc: ImageDesc) {
   return (
     <div className="group rounded-lg cursor-pointer">
-      <img
+      <Image
         className="easy-in h-96 w-full max-w-full rounded-lg object-cover object-center brightness-50 transition-transform duration-500 group-hover:scale-110"
         src={desc.href}
         alt="gallery-photo"
