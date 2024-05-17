@@ -51,7 +51,7 @@ export default function SiteNavbar() {
               key={link.name}
               href={link.href}
               className={clsx(
-                'group text-medium font-bold uppercase transition-all duration-300 ease-in-out',
+                'group text-sm font-medium uppercase transition-all duration-300 ease-in-out',
                 {
                   'text-indigo-600': pathname === link.href,
                 },
@@ -83,7 +83,7 @@ export default function SiteNavbar() {
               key={link.name}
               href={link.href}
               className={clsx(
-                'w-full text-medium font-semibold hover:text-indigo-600',
+                'w-full text-medium font-medium hover:text-indigo-600',
                 {
                   'text-indigo-600': pathname === link.href,
                 },

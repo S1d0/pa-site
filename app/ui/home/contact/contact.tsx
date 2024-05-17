@@ -6,6 +6,7 @@ import ContactForm from './contact-form';
 import clsx from 'clsx';
 import SuccessMsgBox from './success-msg';
 import { IToggle } from '@/app/lib/definitions';
+import SectionHeader from "@/app/ui/section-header";
 
 export default function Contact() {
   const [showSuccess, setShowSuccess] = useState(false);
@@ -13,19 +14,12 @@ export default function Contact() {
   const setShowSuccessBox: IToggle<boolean> = (key: boolean) => {
     setShowSuccess(key);
   };
-
+  const title = "Napisz nam o Twoim projekcie remontu"
+  const desc = "zrealizujmy Twoje marzenia"
   return (
     <section id="contact" className="relative m-2 px-2">
       <div className="mt-2 flex flex-col items-center gap-4 sm:mt-12 sm:gap-16">
-        <div className="flex flex-col items-center gap-2">
-          <h2 className="text-sm uppercase text-zinc-500 sm:text-medium">
-            zrealizujmy Twoje marzenia
-          </h2>
-          <Divider className="my-2" />
-          <h1 className="text-xl font-semibold text-zinc-800 sm:text-4xl">
-            Napisz nam o Twoim projekcie remontu
-          </h1>
-        </div>
+        <SectionHeader title={title} description={desc} />
         <div className="flex flex-col gap-2">
           <div
             className={clsx(

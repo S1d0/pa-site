@@ -6,13 +6,14 @@ import {
 } from '@nextui-org/react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { lusitana } from '@/app/ui/fonts';
 
-const backdrops = ['opaque', 'blur', 'transparent'];
-const num = '+48 606 722 821';
+const phone = process.env.CONTACT_PHONE;
+
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full">
+    <section className={`${lusitana.className} relative h-screen w-full`}>
       <Image
         src="/hero-desktop1.png"
         height={1000}
@@ -42,8 +43,8 @@ export default function Hero() {
                     <div className="text-medium font-bold">
                       Powiedz nam o swoich planach!
                     </div>
-                    <p className='hidden sm:flex'>{num}</p>
-                    <Link className='sm:hidden font-semibold' href="tel+48606722821">{num}</Link>
+                    <p className='hidden sm:flex'>{phone}</p>
+                    <Link className='sm:hidden font-semibold' href="tel:+48606722821">{phone}</Link>
                   </div>
                 </PopoverContent>
               </Popover>

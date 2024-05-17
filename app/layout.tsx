@@ -1,5 +1,7 @@
 import '@/app/ui/global.css';
 import MobileNav from '@/app/ui/navbar/navbar';
+import { inter } from '@/app/ui/fonts'
+import Footer from "@/app/ui/footer/footer";
 
 export default function RootLayout({
   children,
@@ -8,10 +10,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='scroll-smooth'>
-      <MobileNav />
-
-        {children}
+      <body className={`${inter.className} scroll-smooth antialiased flex flex-col justify-between`}>
+          <MobileNav />
+          <div className="mb-auto">
+              {children}
+          </div>
+          <Footer />
         </body>
     </html>
   );
