@@ -28,10 +28,10 @@ export default function ProjectsPage() {
 
                     {/* Category select*/}
                     <div className="mt-4 flex flex-col sm:gap-2 sm:mt-12">
-                        <h2 className="text-sm uppercase text-zinc-500">
+                        <h2 className="text-sm text-center sm:text-start uppercase text-zinc-500">
                             Wybierz kategorię
                         </h2>
-                        <div className="flex gap-8">
+                        <div className="flex gap-2 sm:gap-8 justify-center sm:justify-start">
                             {categories.map((category) => {
                                 return (
                                     <div
