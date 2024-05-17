@@ -10,9 +10,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} scroll-smooth antialiased`}>
+      <body className={`${inter.className} scroll-smooth antialiased flex flex-col justify-between`}>
           <MobileNav />
-          {children}
+          <div className="mb-auto">
+              {children}
+          </div>
           <Footer />
         </body>
     </html>

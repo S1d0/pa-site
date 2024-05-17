@@ -6,7 +6,7 @@ export default function ImageContainer(desc: ImageDesc) {
   return (
       <Card
           key={desc.title}
-          className={clsx('transition-all duration-500 group col-span-12 h-[300px] cursor-pointer justify-center sm:col-span-4',
+          className={clsx('transition-all duration-500 group col-span-12 h-[300px] sm:w-full cursor-pointer justify-center sm:col-span-4',
           )}
       >
           <CardBody className="absolute z-10 items-center">

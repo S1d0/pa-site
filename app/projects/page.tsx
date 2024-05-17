@@ -13,7 +13,7 @@ export default function ProjectsPage() {
 
     return (
         <main>
-            <div className="container mx-auto">
+            <div className="container px-2 sm:mx-auto">
                 <div className="flex flex-col gap-2 sm:gap-8">
                     {/* Header  */}
                     <div className="hidden flex-col gap-2 sm:mt-12 sm:flex">
@@ -27,7 +27,7 @@ export default function ProjectsPage() {
                     </div>
 
                     {/* Category select*/}
-                    <div className="mt-4 flex flex-col gap-2 sm:mt-12">
+                    <div className="mt-4 flex flex-col sm:gap-2 sm:mt-12">
                         <h2 className="text-sm uppercase text-zinc-500">
                             Wybierz kategorię
                         </h2>

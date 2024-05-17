@@ -9,30 +9,30 @@ export default async function Page({params}: { params: { id: string } }) {
     const project: Project = await fetchProject(id)
     return (
         <main>
-            <div className="container mx-auto">
-                <div className="flex flex-col ">
+            <div className="container mx-auto px-2">
+                <div className="flex flex-col">
                     <section id="main">
-                        <div className="hidden flex-col gap-2 sm:mt-12 sm:flex sm:mb-12">
+                        <div className="flex-col gap-2 sm:mt-12 sm:flex mt-8 mb:24 sm:mb-12">
                             <h2 className="text-sm uppercase text-zinc-500">
                                 {project.designer}
                             </h2>
-                            <h1 className="text-2xl font-bold tracking-wide text-zinc-800 sm:text-3xl">
+                            <h1 className="text-xl sm:text-2xl font-bold tracking-wide text-zinc-800 sm:text-3xl">
                                 {project.name}. Zrealizowaliśmy go w <span
                                 className="text-indigo-500"> {project.workTime}</span>.
                             </h1>
                         </div>
-                        <div className="flex gap-2 relative">
+                        <div className="flex flex-col sm:flex-row gap-2 mt-4 relative">
                             <div
-                                className="flex flex-col h-96 w-1/3 items-center justify-center sticky top-1/3 gap-4 px-8">
+                                className="sm:flex flex-col sm:h-96 sm:w-1/3 sm:items-center sm:justify-center sm:sticky sm:top-1/3 sm:gap-4 sm:px-8">
                                 <div className="flex flex-col gap-4">
-                                    <h1 className="text-2xl sm:text-4xl font-bold">{project.name}</h1>
-                                    <p className="tracking-wider">{project.description}</p>
+                                    <h1 className="hidden sm:block text-2xl sm:text-4xl font-bold">{project.name}</h1>
+                                    <p className="tracking-wide sm:tracking-wider">{project.description}</p>
                                     <p><span
                                         className="font-semibold">Powierzchnia inwestycji: </span>{project.areaInfo}</p>
-                                    <p><span className="font-semibold">Czas realizacji: </span>{project.workTime}</p>
+                                    <p className="hidden sm:flex"><span className="font-semibold">Czas realizacji: </span>{project.workTime}</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col w-2/3 gap-2">
+                            <div className="flex flex-col sm:w-2/3 gap-2">
                                 {project.imgUrls.map((imgUrl, index) => {
                                     return (
                                         <div className="flex items-center align-middle justify-center" key={index}>
@@ -41,7 +41,7 @@ export default async function Page({params}: { params: { id: string } }) {
                                                 alt="Card background"
                                                 width={740}
                                                 height={740}
-                                                className="object-cover items-center sm:my-2 rounded-md shadow-2xl"
+                                                className="object-cover items-center sm:my-2 rounded-md sm:shadow-2xl"
                                                 src={imgUrl}
                                             />
                                         </div>
@@ -49,8 +49,8 @@ export default async function Page({params}: { params: { id: string } }) {
                                 })}
                             </div>
                         </div>
-                        <div className="group hidden flex-col gap-2 sm:mt-24 sm:mb-36 sm:flex items-center">
-                            <h1 className="text-2xl font-bold tracking-wide text-zinc-800 sm:text-3xl">
+                        <div className="group flex-col gap-2 mt-4 sm:mt-24 mb-12 sm:mb-36 sm:flex items-center">
+                            <h1 className="text-xl sm:text-2xl font-bold text-center tracking-wide text-zinc-800 sm:text-3xl">
                                 <UnderlineLink href={"/projects"}>
                                     <div className="flex gap-2">
                                         <p>Poznaj więcej naszych <span
