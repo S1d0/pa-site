@@ -30,7 +30,5 @@ export default function Footer() {
                     href="/" className="hover:underline">P&A™</Link>. Wszelkie prawa zastrzeżone.</span>
             </div>
         </footer>
-
-
     )
 }
