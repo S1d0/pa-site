@@ -1,17 +1,16 @@
 import {fetchProject} from "@/app/lib/project/actions";
 import {Project} from "@/app/lib/definitions";
 import {Image} from "@nextui-org/react";
+import UnderlineLink from "@/app/ui/underlined-link";
+import {IoArrowRedoSharp} from "react-icons/io5";
 
 export default async function Page({params}: { params: { id: string } }) {
     const id = params.id;
     const project: Project = await fetchProject(id)
-
-    console.log("Project:")
-    console.log(project)
     return (
         <main>
             <div className="container mx-auto">
-                <div className="flex flex-col gap-2 sm:gap-10">
+                <div className="flex flex-col ">
                     <section id="main">
                         <div className="hidden flex-col gap-2 sm:mt-12 sm:flex sm:mb-12">
                             <h2 className="text-sm uppercase text-zinc-500">
@@ -42,7 +41,7 @@ export default async function Page({params}: { params: { id: string } }) {
                                                 alt="Card background"
                                                 width={740}
                                                 height={740}
-                                                className="object-cover items-center sm:my-2 rounded-md"
+                                                className="object-cover items-center sm:my-2 rounded-md shadow-2xl"
                                                 src={imgUrl}
                                             />
                                         </div>
@@ -50,10 +49,19 @@ export default async function Page({params}: { params: { id: string } }) {
                                 })}
                             </div>
                         </div>
-                        <div className="bg-amber-100 sm:mt-12">
+                        <div className="group hidden flex-col gap-2 sm:mt-24 sm:mb-36 sm:flex items-center">
+                            <h1 className="text-2xl font-bold tracking-wide text-zinc-800 sm:text-3xl">
+                                <UnderlineLink href={"/projects"}>
+                                    <div className="flex gap-2">
+                                        <p>Poznaj więcej naszych <span
+                                            className="group-hover:text-indigo-500">realizacji</span>
+                                        </p>
+                                        <IoArrowRedoSharp/>
+                                    </div>
+                                </UnderlineLink>
+                            </h1>
                         </div>
                     </section>
-                    <section id="footer"></section>
                 </div>
             </div>
         </main>

@@ -70,3 +70,11 @@ export type Project = {
     workTime: string,
     imgUrls: string[]
 }
+
+export type ProjectPreview = {
+    id: string
+    name: string,
+    tag: string,
+    shortDescription: string
+    imgUrl: string
+}

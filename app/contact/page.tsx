@@ -15,9 +15,6 @@ export default function ContactPage() {
             <h2 className="text-center text-sm uppercase tracking-wide text-zinc-500 sm:text-medium	">
               Masz już pomysł?
             </h2>
-            <h2 className="text-center text-sm uppercase tracking-wide text-zinc-500 sm:text-medium	">
-              A może potrzebujesz planu?
-            </h2>
             <h1 className="text-center text-2xl font-semibold tracking-wide text-zinc-800 sm:text-6xl">
               Zaplanuj z nami swój{' '}
               <span className="text-indigo-500">następny</span> projekt
@@ -26,23 +23,19 @@ export default function ContactPage() {
           <div className="flex">
             <div className="hidden w-1/3 flex-col items-center justify-center gap-8 py-2 sm:flex">
               <div className="flex-col items-center justify-center gap-4 sm:flex">
-                <p className="px-4 py-4 text-center text-lg leading-9 tracking-wide">
+                <p className="px-4 py-4  text-lg leading-9 tracking-wide">
                   Planujesz wykończenie mieszkania? Zastanawiasz się ile będzie
                   kosztował Cię remont?
                 </p>
-                <p className="px-4 text-center text-lg leading-9 tracking-wide">
+                <p className="px-4  text-lg leading-9 tracking-wide">
                   Daj nam znać co planujesz a my zajmiemy się kalkulacją
                   budżetu. Sprawdź ile będzie kosztowało wykończenie twojego
                   wnętrza obejmujące projekt, produkty oraz realizację.
                 </p>
-                <p className="px-4 text-center text-lg leading-9 tracking-wide">
-                  Zajmiemy się wszystkim!
-                </p>
               </div>
-              <Divider />
-              <div className="hidden flex-col items-center gap-4 sm:flex">
-                <h2 className="text-2xl font-semibold">ZADZWOŃ DO NAS</h2>
-                <div className="flex items-center gap-2">
+              <div className="hidden flex-col items-center gap-4 sm:flex mb:24">
+                <h2 className="text-2xl">ZADZWOŃ DO NAS</h2>
+                <div className="flex items-center align-middle gap-2">
                   <span>
                     <FaPhoneAlt className="text-2xl text-indigo-500" />
                   </span>
