@@ -4,21 +4,16 @@ import { LiaPencilRulerSolid } from 'react-icons/lia';
 import { GiPaintBucket } from 'react-icons/gi';
 import { BsLampFill } from 'react-icons/bs';
 import { Divider } from '@nextui-org/react';
+import SectionHeader from "@/app/ui/section-header";
 
 export default function About() {
+  const headerTitle = "Szczegóły mają dla nas znaczenie"
+  const description = "nasza filozofia realizacji wykończeń"
   return (
     <section id="about" className="relative m-2 px-2 sm:my-16 sm:px-12">
       <div className="flex flex-col items-center gap-12 mt-8 sm:mt-12 sm:gap-16">
         {/* Filozofia */}
-        <div className="flex flex-col items-center gap-2">
-          <h2 className="text-sm sm:text-medium uppercase text-zinc-500">
-            nasza filozofia realizacji wykończeń
-          </h2>
-          <Divider className="my-2" />
-          <h1 className="text-xl sm:text-4xl font-semibold text-zinc-800">
-            Szczegóły mają dla nas znaczenie
-          </h1>
-        </div>
+        <SectionHeader title={headerTitle}  description={description}/>
         <div className="container">
           <div className="m-auto grid grid-cols-12 gap-8 ">
             <Card className="col-span-12 h-[600px] sm:col-span-4 group">
@@ -113,15 +108,7 @@ export default function About() {
         </div>
 
         {/* Współpraca */}
-        <div className="flex flex-col items-center gap-2">
-          <h2 className="sm:text-medium uppercase text-zinc-500">
-            razem możemy więcej
-          </h2>
-          <Divider className="my-2" />
-          <h1 className="text-xl sm:text-4xl font-semibold text-zinc-800">
-            Współpracujemy z najlepszymi na rynku
-          </h1>
-        </div>
+        <SectionHeader title={"Współpracujemy z najlepszymi na rynku"} description={"razem możemy więcej"} />
         <div className="container">
           <div className="m-auto grid grid-cols-12 gap-8">
             <Card className="col-span-12 sm:col-span-4">

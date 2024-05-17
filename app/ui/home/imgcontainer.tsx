@@ -1,25 +1,28 @@
 import { ImageDesc } from '@/app/lib/definitions';
-import {Image} from "@nextui-org/react";
+import {Card, CardBody, Image} from "@nextui-org/react";
+import clsx from "clsx";
 
 export default function ImageContainer(desc: ImageDesc) {
   return (
-    <div className="group rounded-lg cursor-pointer">
-      <Image
-        className="easy-in h-96 w-full max-w-full rounded-lg object-cover object-center brightness-50 transition-transform duration-500 group-hover:scale-110"
-        src={desc.href}
-        alt="gallery-photo"
-      />
-      <div className="absolute inset-0 flex flex-col items-center justify-center align-middle opacity-50 transition-opacity duration-200 ease-in group-hover:opacity-100">
-        <h2 className="text-xl font-bold text-stone-200 first-letter:text-center sm:pb-4 sm:text-4xl">
-          {desc.title}
-        </h2>
-        <p
-          className="block text-center  text-base font-bold text-stone-200 sm:text-xl
-        "
-        >
-        {desc.desc}
-        </p>
-      </div>
-    </div>
+      <Card
+          key={desc.title}
+          className={clsx('transition-all duration-500 group col-span-12 h-[300px] cursor-pointer justify-center sm:col-span-4',
+          )}
+      >
+          <CardBody className="absolute z-10 items-center">
+              <p className="text-tiny font-bold text-white/60 invisible group-hover:visible">
+                  {desc.desc}
+              </p>
+              <h4 className="text-xl sm:text-2xl font-medium text-white">
+                  {desc.title}
+              </h4>
+          </CardBody>
+          <Image
+              removeWrapper
+              alt="Card background"
+              className="z-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110  group-hover:brightness-50 brightness-75"
+              src={desc.href}
+          />
+      </Card>
   );
 }
