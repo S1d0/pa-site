@@ -1,17 +1,3 @@
-// This file contains type definitions for your data.
-// It describes the shape of the data, and what data type each property should accept.
-// However, these types are generated automatically if you're using an ORM such as Prisma.
-
-export type ContactForm = {
-    name: string;
-    email: string;
-    phone: string;
-    projectDesc: string;
-};
-
-
-// Wszystko powyżej do usunięcia
-
 export type ImageDesc = {
     title: string;
     desc: string;
@@ -59,22 +45,4 @@ export type UnderlineButtonProp<actionArgType> = {
 export type SectionHeader = {
     title: string,
     description: string
-}
-
-export type Project = {
-    id: string,
-    name: string,
-    areaInfo: string,
-    description: string,
-    designer: string,
-    workTime: string,
-    imgUrls: string[]
-}
-
-export type ProjectPreview = {
-    id: string
-    name: string,
-    tag: string,
-    shortDescription: string
-    imgUrl: string
 }

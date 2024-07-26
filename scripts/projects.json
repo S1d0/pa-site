@@ -1,0 +1,87 @@
+[
+    {
+        "id": "1",
+        "created": "2020-01-12T00:00:00Z",
+        "description": "Od wielu sezonów niezmiennie modne są odcienie bieli i szarości, beton, kamień i drewno, kolor zielony, niebieski i róż, kabiny prysznicowe bez tradycyjnego brodzika oraz popularna od lat podwieszana kolorowa ceramika.",
+        "place": "Warszawa, Rewita Apartments",
+        "designer": "biuro proj. Anna Zajkowska",
+        "projectAreas": ["łazienka"],
+        "projectStartDate": "2019-10-01T00:00:00Z",
+        "projectEndDate": "2019-12-01T00:00:00Z",
+        "imgs": [
+            {
+                "path": "/portfolio/bathroom/bathroom1.jpg",
+                "created": "2020-03-12T00:00:00Z"
+            },
+            {
+                "path": "/portfolio/bathroom/bathroom2.jpg",
+                "created": "2020-03-12T00:00:00Z"
+            },
+            {
+                "path": "/portfolio/bathroom/bathroom3.jpg",
+                "created": "2020-03-12T00:00:00Z"
+            },
+            {
+                "path": "/portfolio/bathroom/bathroom4.jpg",
+                "created": "2020-03-12T00:00:00Z"
+            },
+            {
+                "path": "/portfolio/bathroom/bathroom5.jpg",
+                "created": "2020-03-12T00:00:00Z"
+            }
+        ],
+        "prevImgs": [
+            {
+                "path": "/portfolio/bathroom/prev-bathroom1.jpg",
+                "created": "2020-01-12T00:00:00Z",
+                "title": "Łazienka w nastrojowej zieleni",
+                "description": "realizacja projektu biura proj. A. Zajkowska"
+            }
+        ]
+      },
+      
+  {
+    "id": 2,
+    "created": "2020-01-12T00:00:00Z",
+    "description": "Projekt rewitalizacji kuchni o powierzchni 20 m² z wyspą na środku. Kuchnia została zaprojektowana z myślą o funkcjonalności i nowoczesnym stylu. Centralna wyspa kuchni pełni rolę zarówno miejsca do gotowania, jak i przestrzeni do spożywania posiłków. Użyte materiały to wysokiej jakości drewno, granitowe blaty oraz stal nierdzewna, co nadaje wnętrzu elegancki wygląd. Kuchnia wyposażona jest w nowoczesne urządzenia AGD, w tym wbudowany piekarnik, zmywarkę oraz lodówkę. Dodatkowo, zastosowane oświetlenie LED podkreśla nowoczesny charakter pomieszczenia.\n\nProjekt sypialni został stworzony z myślą o maksymalnym komforcie i relaksie. Użyte ciepłe odcienie beżu i brązu wprowadzają przytulną atmosferę. Główne elementy wyposażenia to duże, wygodne łóżko z tapicerowanym zagłówkiem, pojemne szafy wnękowe oraz eleganckie stoliki nocne. Dodatkowym atutem jest oświetlenie LED z możliwością regulacji natężenia, co pozwala na stworzenie idealnych warunków do odpoczynku.\n\nŁazienka została zaprojektowana w nowoczesnym stylu z wykorzystaniem wysokiej jakości materiałów. Dominuje tu połączenie bieli i szarości, które nadaje wnętrzu elegancji i przestronności. Kabina prysznicowa bez tradycyjnego brodzika oraz podwieszana ceramika to kluczowe elementy projektu. Dodatkowo, w łazience zastosowano duże lustra oraz oświetlenie LED, które optycznie powiększają przestrzeń.",
+    "place": "Warszawa, Rewita Apartments",
+    "designer": "biuro proj. Anna Zajkowska",
+    "projectAreas": ["kuchnia"],
+    "projectStartDate": "2020-01-12T00:00:00Z",
+    "projectEndDate": "2020-03-12T00:00:00Z",
+    "imgs": [
+        {
+            "path": "/portfolio/kitchen/kitchen1.jpg",
+            "created": "2020-03-12T00:00:00Z"
+        },
+        {
+            "path": "/portfolio/kitchen/kitchen2.jpg",
+            "created": "2020-03-12T00:00:00Z"
+        },
+        {
+            "path": "/portfolio/kitchen/kitcheb2.jpg",
+            "created": "2020-03-12T00:00:00Z"
+        },
+        {
+            "path": "/portfolio/kitchen/kitchen4.jpg",
+            "created": "2020-03-12T00:00:00Z"
+        },
+        {
+            "path": "/portfolio/kitchen/kitchen5.jpg",
+            "created": "2020-03-12T00:00:00Z"
+        },
+        {
+            "path": "/portfolio/kitchen/kitchen6.jpg",
+            "created": "2020-03-12T00:00:00Z"
+        }
+    ],
+    "prevImgs": [
+        {
+            "path": "/portfolio/kitchen/kitcheb2.jpg",
+            "created": "2020-03-12T00:00:00Z",
+            "title": "Kuchnia w nastrojowej zieleni",
+            "description": "realizacja projektu biura proj. A. Zajkowska"
+        }
+    ]
+  }
+]

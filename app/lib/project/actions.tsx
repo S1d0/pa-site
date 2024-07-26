@@ -1,42 +1,13 @@
-import {database} from "@/app/ui/home/showcase/placeholders";
-import {Project} from "@/app/lib/definitions";
+import { sql } from '@vercel/postgres';
+import { Project } from './definitions';
 
 
-
-export async function fetchProject(id: string): Promise<Project> {
+export async function fetchProjects(): Project[] {
     try {
-        const project = database.getProjectById(id);
-        if (!project) {
-            throw new Error('Project not found');
-        }
-        return project;    } catch (error) {
-        console.log(error);
-        throw new Error('Failed to fetch project');
-    }
+        const data = await sql<Project>`SELECT * FROM projects`;
+        return data.rows;
+    } catch (error) {
+        console.error('Database Error:', error);
+        throw new Error('Failed to fetch revenue data.');
+      }
 }
-
-
-// export async function fetchInvoiceById(id: string) {
-//     try {
-//         const data = await sql<InvoiceForm>`
-//       SELECT
-//         invoices.id,
-//         invoices.customer_id,
-//         invoices.amount,
-//         invoices.status
-//       FROM invoices
-//       WHERE invoices.id = ${id};
-//     `;
-//
-//         const invoice = data.rows.map((invoice) => ({
-//             ...invoice,
-//             // Convert amount from cents to dollars
-//             amount: invoice.amount / 100,
-//         }));
-//
-//         return invoice[0];
-//     } catch (error) {
-//         console.error('Database Error:', error);
-//         throw new Error('Failed to fetch invoice.');
-//     }
-// }
