@@ -1,16 +1,17 @@
 export type Project = {
     id: string;
-    created: Date;
+    createdAt: Date;
     name: string;
+    mainImage: string;
     areaInfo: string;
     description: string;
     place: string;
     designer: string;
     tags: string[];
-    workTime: string;
-    projectStartDate: string;
-    projectEndDate: string;
+    workTime: number;
+    projectStartDate: Date;
+    projectEndDate: Date;
     imgs: string[];
-    previewImgs: string[]
-    previewDescription: string
-};
+    previewImgs: string[];
+    previewDescription: string;
+  };
