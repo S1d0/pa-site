@@ -17,6 +17,7 @@ This is the way how we are going to seed database with aggregated data from P&A 
 
 
 Prerequisite install:
+    -> setup connection to postgress, reach out to ME and ask how
     -> httpie
     -> node.js => v.20.15.1
     -> psql => 14.12 (optionally)
