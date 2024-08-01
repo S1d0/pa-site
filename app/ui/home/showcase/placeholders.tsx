@@ -1,4 +1,4 @@
-import {Project} from "@/app/lib/definitions";
+import {ProjectDetail, ProjectPreview} from "@/app/lib/project/definitions";
 
 export enum PortfolioTag {
     HOME = 'dom',
@@ -91,60 +91,3 @@ export const projectPreviews = [
         imgHref: '/portfolio/house/house6.jpg',
     },
 ];
-
-
-export class InMemoryDatabase {
-    private projects: Project[] = [];
-
-    // Add a new project to the database
-    addProject(project: Project): void {
-        this.projects.push(project);
-    }
-
-    // Get all projects from the database
-    getAllProjects(): Project[] {
-        return this.projects;
-    }
-
-    // Get a project by its ID
-    getProjectById(id: string): Project | undefined {
-        return this.projects.find(project => project.id === id);
-    }
-
-    // Update an existing project
-    updateProject(id: string, updatedProject: Partial<Project>): Project | undefined {
-        const index = this.projects.findIndex(project => project.id === id);
-        if (index !== -1) {
-            this.projects[index] = { ...this.projects[index], ...updatedProject };
-            return this.projects[index];
-        }
-        return undefined;
-    }
-
-    // Delete a project by its ID
-    deleteProject(id: string): boolean {
-        const initialLength = this.projects.length;
-        this.projects = this.projects.filter(project => project.id !== id);
-        return this.projects.length !== initialLength;
-    }
-}
-
-export const database = new InMemoryDatabase();
-
-database.addProject({
-    id: "dom1",
-    name: "Dom w Jerzmanowicach",
-    areaInfo: '150 m2',
-    description: "W tej aranżacji w stylu rustykalnym w industrialnej oprawie postawiliśmy na prostotę i bezpretensjonalność: skromne drewniane meble oraz naturalne kolory.\n" +
-        "\n" +
-        "Aby uzyskać lepszy efekt dodaliśmy kilka akcentów: kolorowe krzesła oraz wygodne duże fotele mocnego koloru.",
-    designer: "Projekt biura arch. Emilia Zajkowska & Friends",
-    workTime: '4 miesiące',
-    imgUrls: [
-        'https://images.pexels.com/photos/2950003/pexels-photo-2950003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        'https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        'https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        'https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        'https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    ],
-});

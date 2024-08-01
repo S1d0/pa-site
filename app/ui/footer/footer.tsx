@@ -15,7 +15,7 @@ export default function Footer() {
                             <Link href="/about" className="hover:underline me-4 md:me-6">O nas</Link>
                         </li>
                         <li>
-                            <Link href="policy" className="hover:underline me-4 md:me-6">Polityka prywatności</Link>
+                            <Link href="/privacy-policy" className="hover:underline me-4 md:me-6">Polityka prywatności</Link>
                         </li>
                         <li>
                             <Link href="/projects" className="hover:underline me-4 md:me-6">Realizacje</Link>
