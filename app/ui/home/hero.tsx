@@ -51,7 +51,7 @@ export default function Hero() {
             </div>
 
             <Link
-              href="/home#showcase"
+              href="/projects"
               className="block rounded-lg bg-stone-200/60 px-4 py-2 text-center font-bold text-stone-800 hover:bg-zinc-800/60 hover:text-white sm:w-52"
             >
               Nasze realizacje

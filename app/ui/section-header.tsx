@@ -1,7 +1,7 @@
 import {Divider} from "@nextui-org/react";
-import {SectionHeader} from "@/app/lib/definitions";
+import {SectionHeaderType} from "@/app/lib/definitions";
 
-export default function SectionHeader(props: SectionHeader) {
+export default function SectionHeader(props: SectionHeaderType) {
     return (
         <div className="flex flex-col items-center gap-2">
             <h2 className="text-sm sm:text-medium uppercase text-zinc-500">
