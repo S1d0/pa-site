@@ -9,7 +9,7 @@ import { InsertProject, projects } from './schema';
  * 
  */
 
-function toProject(results: InsertProject[]): Project[] {
+export function toProject(results: InsertProject[]): Project[] {
   return results.map((result) => ({
     id: result.id ?? '', // Ensure default values if necessary
     name: result.name,

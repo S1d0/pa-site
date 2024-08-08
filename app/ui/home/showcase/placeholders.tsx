@@ -1,5 +1,3 @@
-import {ProjectDetail, ProjectPreview} from "@/app/lib/project/definitions";
-
 export enum PortfolioTag {
     HOME = 'dom',
     FLAT = 'mieszkanie',
