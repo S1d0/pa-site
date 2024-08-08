@@ -46,4 +46,5 @@ select count(*) from projects;
 2. In the main page use preview object created from Project
 3. Implement caraousel
 4. Add new table `partners` and use it in HomePage
-4. Add new table `clients` and store data from emails
+5. Add new table `clients` and store data from emails
+6. Replace statics with use of Cloudinary as our CDN to store all of these images
