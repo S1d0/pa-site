@@ -1,12 +1,19 @@
 import { Project } from '@/app/lib/project/definitions';
-import { db } from '.';
-import { InsertProject, projectsTable } from './schema';
+import { db } from './db';
+import { InsertProject, projects } from './schema';
+
+/**
+ * TODO:
+ * This file should be removed, 
+ * All methods needs to be moved @/app/lib/projects/actions.tsx, since it's project domain 
+ * 
+ */
 
 function toProject(results: InsertProject[]): Project[] {
   return results.map((result) => ({
     id: result.id ?? '', // Ensure default values if necessary
     name: result.name,
-    mainImage: result.image,
+    mainImage: result.mainImage,
     createdAt: new Date(result.createdAt ?? new Date()),
     areaInfo: result.areaInfo ?? 'undefined',
     description: result.description,
@@ -24,7 +31,7 @@ function toProject(results: InsertProject[]): Project[] {
 
 export async function createProject(data: InsertProject): Promise<Project[]> {
   return db
-    .insert(projectsTable)
+    .insert(projects)
     .values(data)
     .onConflictDoNothing()
     .returning()
@@ -33,7 +40,7 @@ export async function createProject(data: InsertProject): Promise<Project[]> {
 
 export async function createManyProjects(data: InsertProject[]): Promise<Project[]> {
     return db
-      .insert(projectsTable)
+      .insert(projects)
       .values(data)
       .onConflictDoNothing()
       .returning()
@@ -43,7 +50,7 @@ export async function createManyProjects(data: InsertProject[]): Promise<Project
 
 export async function deleteAll() {
   try {
-    await db.delete(projectsTable);
+    await db.delete(projects);
     console.log('All records deleted');
   } catch (error) {
     console.error('Error deleting records:', error);

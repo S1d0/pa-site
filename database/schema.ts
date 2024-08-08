@@ -1,6 +1,6 @@
 import { pgTable, text, integer, timestamp, uuid } from 'drizzle-orm/pg-core';
 
-export const projectsTable = pgTable('projects', {
+export const projects = pgTable('projects', {
   id: uuid('id').primaryKey().defaultRandom(),
   name: text('name').notNull(),
   mainImage: text('mainImage`').notNull(),
@@ -18,5 +18,5 @@ export const projectsTable = pgTable('projects', {
   previewDescription: text('previewDescription'),
 });
 
-export type InsertProject = typeof projectsTable.$inferInsert;
-export type SelectProject = typeof projectsTable.$inferSelect;
+export type InsertProject = typeof projects.$inferInsert;
+export type SelectProject = typeof projects.$inferSelect;
