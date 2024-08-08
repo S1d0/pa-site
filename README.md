@@ -26,6 +26,19 @@ Prerequisite install:
 2. Run locally project
 3. From terminal run POST request: http://localhost:3000/api/run-migration 
 4. Check output of terminal and verify correctnes of table content on Vercel site
+5. In bash terminal run source `./export-envs.sh` 
+6. Login to database from console `psql $POSTGRES_URL`
+7. View project table, verify data 
+```
+# Enable pretty print
+\x
+
+# Examine table projects
+select * from projects;
+
+# Check how many records are created
+select count(*) from projects;
+```
 
 
 # Future scope of work

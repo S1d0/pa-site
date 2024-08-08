@@ -9,12 +9,12 @@ export enum PortfolioTag {
 
 export const categories = [
     {
-        name: 'dom',
-        actionArg: 'house',
+        name: 'salon',
+        actionArg: 'saloon',
     },
     {
-        name: 'mieszkanie',
-        actionArg: 'flat',
+        name: 'korytarz',
+        actionArg: 'corridor',
     },
     {
         name: 'łazienka',

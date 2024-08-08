@@ -56,7 +56,7 @@ export async function fetchProject(id: string): Promise<Project | null> {
 }
 
 export async function fetchProjectPreviews(): Promise<ProjectPreview[]> {
-  return db
+  const results = await db
     .select({
       id: projects.id,
       name: projects.name,
@@ -65,5 +65,7 @@ export async function fetchProjectPreviews(): Promise<ProjectPreview[]> {
       tags: projects.tags,
     })
     .from(projects)
-    .then((results) => results.map(mapToPreview));
+
+
+  return results.map(mapToPreview);
 }

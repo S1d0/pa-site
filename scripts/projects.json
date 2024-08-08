@@ -1,30 +1,99 @@
 [
-    {
-        "id": "b4e7fd3a-11a3-4e64-8799-067e4d44b970",
-        "name": "Stylowa łazienka",
-        "mainImage": "/portfolio/bathroom/bathroom1.jpg",
-        "areaInfo": "20 m2",
-        "description": "Od wielu sezonów niezmiennie modne są odcienie bieli i szarości, beton, kamień i drewno, kolor zielony, niebieski i róż, kabiny prysznicowe bez tradycyjnego brodzika oraz popularna od lat podwieszana kolorowa ceramika.",
-        "place": "Warszawa, Rewita Apartments",
-        "designer": "biuro proj. Anna Zajkowska",
-        "tags": [
-            "bathroom"
-        ],
-        "workTime": 4,
-        "projectStartDate": "2019-10-01T00:00:00.000Z",
-        "projectEndDate": "2019-12-01T00:00:00.000Z",
-        "imgs": [
-            "/portfolio/bathroom/bathroom1.jpg",
-            "/portfolio/bathroom/bathroom2.jpg",
-            "/portfolio/bathroom/bathroom3.jpg",
-            "/portfolio/bathroom/bathroom4.jpg",
-            "/portfolio/bathroom/bathroom5.jpg"
-        ],
-        "previewImgs": [
-            "/portfolio/bathroom/bathroom1.jpg",
-            "/portfolio/bathroom/bathroom2.jpg",
-            "/portfolio/bathroom/bathroom3.jpg"
-        ],
-        "previewDescription": "realizacja projektu biura proj. A. Zajkowska"
-    }
+  {
+    "id": "b4e7fd3a-11a3-4e64-8799-067e4d44b970",
+    "name": "Stylowa łazienka",
+    "mainImage": "/portfolio/bathrooms/example_bathroom_03_2024_waw/preview/01.jpg",
+    "areaInfo": "8 m2",
+    "description": "Od wielu sezonów niezmiennie modne są odcienie bieli i szarości, beton, kamień i drewno, kolor zielony, niebieski i róż, kabiny prysznicowe bez tradycyjnego brodzika oraz popularna od lat podwieszana kolorowa ceramika.",
+    "place": "Warszawa, Rewita Apartments",
+    "designer": "biuro proj. Anna Zajkowska",
+    "tags": ["bathroom"],
+    "workTime": 1,
+    "projectStartDate": "2019-10-01T00:00:00.000Z",
+    "projectEndDate": "2019-12-01T00:00:00.000Z",
+    "imgs": [
+      "/portfolio/bathrooms/example_bathroom_03_2024_waw/01.jpg",
+      "/portfolio/bathrooms/example_bathroom_03_2024_waw/02.jpg",
+      "/portfolio/bathrooms/example_bathroom_03_2024_waw/03.jpg",
+      "/portfolio/bathrooms/example_bathroom_03_2024_waw/04.jpg",
+      "/portfolio/bathrooms/example_bathroom_03_2024_waw/05.jpg"
+    ],
+    "previewImgs": [
+      "/portfolio/bathrooms/example_bathroom_03_2024_waw/preview/01.jpg",
+      "/portfolio/bathrooms/example_bathroom_03_2024_waw/preview/02.jpg"
+    ],
+    "previewDescription": "realizacja projektu biura proj. A. Zajkowska"
+  },
+  {
+    "id": "1d855ba1-3265-4f0b-b30c-986a3affc081",
+    "name": "Stylowa kuchnia",
+    "mainImage": "/portfolio/kitchens/example_kitchen_01_2024_waw/preview/01.jpg",
+    "areaInfo": "15 m2",
+    "description": "Kuchnia jest urządzona w nowoczesnym stylu, z połączeniem bieli, szarości i drewna. Dominują proste, minimalistyczne linie i wyspa kuchenna, która jest centralnym punktem. Ściany wykończono betonem, a podłogę wykonano z jasnych desek. Przestrzeń jest otwarta i dobrze doświetlona, co tworzy przytulny i funkcjonalny charakter wnętrza.",
+    "place": "Warszawa, Rewita Apartments",
+    "designer": "biuro proj. Anna Zajkowska",
+    "tags": ["kitchen"],
+    "workTime": 15,
+    "projectStartDate": "2019-10-01T00:00:00.000Z",
+    "projectEndDate": "2019-12-01T00:00:00.000Z",
+    "imgs": [
+      "/portfolio/kitchens/example_kitchen_01_2024_waw/01.jpg",
+      "/portfolio/kitchens/example_kitchen_01_2024_waw/02.jpg",
+      "/portfolio/kitchens/example_kitchen_01_2024_waw/03.jpg",
+      "/portfolio/kitchens/example_kitchen_01_2024_waw/04.jpg"
+    ],
+    "previewImgs": [
+      "/portfolio/kitchen/example_kitchen_01_2024_waw/preview/01.jpg",
+      "/portfolio/kitchen/example_kitchen_01_2024_waw/preview/02.jpg"
+    ],
+    "previewDescription": "realizacja projektu biura proj. A. Zajkowska"
+  },
+  {
+    "id": "1b7e1fa3-2c31-48bf-9789-b20bb7eb94b6",
+    "name": "Stylowa salon",
+    "mainImage": "/portfolio/saloons/example_saloon_02_2024_bia/02.jpg",
+    "areaInfo": "20 m2",
+    "description": "Salon jest urządzony w nowoczesnym, minimalistycznym stylu. Dominuje w nim jasna, otwarta przestrzeń z dużymi oknami, które zapewniają doskonałe doświetlenie. Meble zostały wybrane w stonowanych, szarych kolorach, tworząc spójną, elegancką całość. Podłogę pokrywa drewniany parkiet, który dodaje ciepła i przytulności. W centrum salonu znajduje się kominek, który stanowi jego centralny punkt. Całość uzupełniają stylowe dodatki, takie jak lampy i dekoracje, nadając wnętrzu nowoczesny i wykończony charakter.",
+    "place": "Białystok, Rewita Apartments",
+    "designer": "biuro proj. Anna Zajkowska",
+    "tags": ["saloon"],
+    "workTime": 20,
+    "projectStartDate": "2019-10-01T00:00:00.000Z",
+    "projectEndDate": "2019-12-01T00:00:00.000Z",
+    "imgs": [
+      "/portfolio/saloons/example_saloon_02_2024_bia/01.jpg",
+      "/portfolio/saloons/example_saloon_02_2024_bia/02.jpg",
+      "/portfolio/saloons/example_saloon_02_2024_bia/03.jpg",
+      "/portfolio/saloons/example_saloon_02_2024_bia/04.jpg"
+    ],
+    "previewImgs": [
+      "/portfolio/saloons/example_saloon_02_2024_bia/preview/01.jpg",
+      "/portfolio/saloons/example_saloon_02_2024_bia/preview/02.jpg"
+    ],
+    "previewDescription": "realizacja projektu biura proj. A. Zajkowska"
+  },
+  {
+    "id": "0d0365e4-9e04-4776-9a95-f3c9639d438e",
+    "name": "Stylowy korytarz",
+    "mainImage": "/portfolio/corridors/example_corridor_04_2024_bia/preview/02.jpg",
+    "areaInfo": "7 m2",
+    "description": "Korytarz jest jasny i przestronny, z podłogą wykończoną jasnymi panelami drewnianymi. Ściany pomalowano na biały kolor, co dodatkowo powiększa wrażenie przestrzeni. Na ścianach zawieszono kilka obrazów w minimalistycznych, prostokątnych ramach, nadając wnętrzu nowoczesny akcent. Wzdłuż jednej ze ścian ustawiono szereg wysokich, wąskich szafek w kolorze szarym, zapewniających dodatkową powierzchnię do przechowywania. Przestrzeń jest dobrze doświetlona przez duże, podłużne okno na końcu korytarza, które wpuszcza do wnętrza naturalną światło.",
+    "place": "Białystok, Rewita Apartments",
+    "designer": "biuro proj. Anna Zajkowska",
+    "tags": ["corridor"],
+    "workTime": 10,
+    "projectStartDate": "2019-10-01T00:00:00.000Z",
+    "projectEndDate": "2019-12-01T00:00:00.000Z",
+    "imgs": [
+      "/portfolio/corridors/example_corridor_04_2024_bia/01.jpg",
+      "/portfolio/corridors/example_corridor_04_2024_bia/02.jpg",
+      "/portfolio/corridors/example_corridor_04_2024_bia/03.jpg",
+      "/portfolio/corridors/example_corridor_04_2024_bia/04.jpg"
+    ],
+    "previewImgs": [
+      "/portfolio/corridors/example_corridor_04_2024_bia/preview/01.jpg",
+      "/portfolio/corridors/example_corridor_04_2024_bia/preview/02.jpg"
+    ],
+    "previewDescription": "realizacja projektu biura proj. A. Zajkowska"
+  }
 ]
