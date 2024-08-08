@@ -4,8 +4,12 @@ import { Image } from '@nextui-org/react';
 import UnderlineLink from '@/app/ui/underlined-link';
 import { IoArrowRedoSharp } from 'react-icons/io5';
 import { Project } from '@/app/lib/project/definitions';
+import { useState } from 'react';
+import clsx from 'clsx';
+import ProjectGallery from './project-gallery';
 
-export default function ProjectDetails({project}: {project: Project}) {
+export default function ProjectDetails({ project }: { project: Project }) {
+  const [hideGallery, setHideGallery] = useState(true);
   const workTime = (time: number) => {
     return time === 1 ? time + 'dzień' : time + 'dni';
   };
@@ -14,7 +18,7 @@ export default function ProjectDetails({project}: {project: Project}) {
     <main>
       <div className="container mx-auto px-2">
         <div className="flex flex-col">
-          <section id="main">
+          <section id="main" className={clsx({ hidden: !hideGallery })}>
             <div className="mb:24 mt-8 flex-col gap-2 sm:mb-12 sm:mt-12 sm:flex">
               <h2 className="text-sm uppercase text-zinc-500">
                 {project.designer}
@@ -54,7 +58,7 @@ export default function ProjectDetails({project}: {project: Project}) {
                 {project.imgs.map((imgUrl, index) => {
                   return (
                     <div
-                      className="flex items-center justify-center align-middle courso"
+                      className="courso flex items-center justify-center align-middle"
                       key={index}
                     >
                       <Image
@@ -62,16 +66,14 @@ export default function ProjectDetails({project}: {project: Project}) {
                         alt="Card background"
                         width={740}
                         height={740}
-                        className="items-center rounded-md object-cover sm:my-2 sm:shadow-xl cursor-pointer hover:shadow-2xl"
+                        className="cursor-pointer items-center rounded-md object-cover hover:shadow-2xl sm:my-2 sm:shadow-xl"
                         src={imgUrl}
+                        onClick={() => setHideGallery(!hideGallery)}
                       />
                     </div>
                   );
                 })}
               </div>
-            </div>
-            <div className="group mb-12 mt-4 flex-col items-center gap-2 sm:mb-36 sm:mt-24 sm:flex">
-              Hidden Section
             </div>
             <div className="group mb-12 mt-4 flex-col items-center gap-2 sm:mb-36 sm:mt-24 sm:flex">
               <h1 className="text-center text-xl font-bold tracking-wide text-zinc-800 sm:text-2xl">
@@ -90,6 +92,9 @@ export default function ProjectDetails({project}: {project: Project}) {
             </div>
           </section>
         </div>
+      </div>
+      <div>
+        <ProjectGallery imgs={project.imgs}></ProjectGallery>
       </div>
     </main>
   );
