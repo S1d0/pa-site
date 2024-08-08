@@ -23,3 +23,11 @@ export type ProjectPreview = {
   img: string;
   tags: string[]
 };
+
+export type DbProjectView = {
+  id: string;
+  name: string;
+  previewDesc: string | null;
+  mainImg: string;
+  tags: string[] | null;
+};

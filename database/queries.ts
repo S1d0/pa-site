@@ -2,6 +2,13 @@ import { Project } from '@/app/lib/project/definitions';
 import { db } from './db';
 import { InsertProject, projects } from './schema';
 
+/**
+ * TODO:
+ * This file should be removed, 
+ * All methods needs to be moved @/app/lib/projects/actions.tsx, since it's project domain 
+ * 
+ */
+
 export function toProject(results: InsertProject[]): Project[] {
   return results.map((result) => ({
     id: result.id ?? '', // Ensure default values if necessary
