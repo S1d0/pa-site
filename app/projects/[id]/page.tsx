@@ -7,7 +7,7 @@ import {IoArrowRedoSharp} from "react-icons/io5";
 
 export default async function Page({params}: { params: { id: string } }) {
     const id = params.id;
-    // const project: Project = await fetchProject(id)
+    // const project: Project = await  (id)
     return(
         <main>Under construction</main>
     )

@@ -42,7 +42,14 @@ export type UnderlineButtonProp<actionArgType> = {
     action: IButtonAction<actionArgType>
 }
 
-export type SectionHeader = {
+export type SectionHeaderType = {
     title: string,
     description: string
+}
+
+export type ContactForm = {
+     name: string,
+     email: string,
+     phone: string, 
+     projectDesc: string 
 }
