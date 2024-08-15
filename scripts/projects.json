@@ -95,5 +95,25 @@
       "/portfolio/corridors/example_corridor_04_2024_bia/preview/02.jpg"
     ],
     "previewDescription": "realizacja projektu biura proj. A. Zajkowska"
+  },
+  {
+    "id": "13717f78-72a1-469a-9c03-86474831bd94",
+    "name": "Kuchnia Emilkis",
+    "mainImage": "/portfolio/kitchens/kitchen_12_2024_waw/01.jpg",
+    "areaInfo": "20 m2",
+    "description": "Salon jest urządzony w nowoczesnym, minimalistycznym stylu. Dominuje w nim jasna, otwarta przestrzeń z dużymi oknami, które zapewniają doskonałe doświetlenie. Meble zostały wybrane w stonowanych, szarych kolorach, tworząc spójną, elegancką całość. Podłogę pokrywa drewniany parkiet, który dodaje ciepła i przytulności. W centrum salonu znajduje się kominek, który stanowi jego centralny punkt. Całość uzupełniają stylowe dodatki, takie jak lampy i dekoracje, nadając wnętrzu nowoczesny i wykończony charakter.",
+    "place": "Białystok, Rewita Apartments",
+    "designer": "biuro proj. Anna Zajkowska",
+    "tags": ["kitchen"],
+    "workTime": 20,
+    "projectStartDate": "2019-10-01T00:00:00.000Z",
+    "projectEndDate": "2019-12-01T00:00:00.000Z",
+    "imgs": [
+      "/portfolio/kitchens/kitchen_12_2024_waw/01.jpg"
+    ],
+    "previewImgs": [
+      "public/portfolio/kitchens/kitchen_12_2024_waw/01.jpg"
+    ],
+    "previewDescription": "realizacja projektu biura proj. A. Zajkowska"
   }
 ]
